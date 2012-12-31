@@ -14,8 +14,8 @@ You now have 500 students in your Student table.
 Figure out the answer to the following questions by using the 'rails console'.  The answers to these questions is the query you would run on the console.
 
 For example:
-Q) How many blue eyed students are there?
-A) Student.where(:eye_color => 'blue').count
+  Q) How many blue eyed students are there?
+  A) Student.where(:eye_color => 'blue').count
 
 Questions:
 
