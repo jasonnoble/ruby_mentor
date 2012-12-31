@@ -1,4 +1,18 @@
 
+You have been hired by the Make R Kids Smart Elementary School.  After discussing with the principal what is needed, you come up with the following requirements.
+
+We want to keep a database of students with the following fields:
+
+    First Name
+    Middle Name
+    Last Name
+    Date of Birth
+    Hair Color
+    Eye Color
+    Height
+    Weight
+    Sex
+
 The code in this folder is designed to help you practice writing ActiveRecord statements on the Rails console.
 
 Usage:
