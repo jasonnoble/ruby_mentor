@@ -19,22 +19,22 @@ A) Student.where(:eye_color => 'blue').count
 
 Questions:
 
-How would you find the student(s) with a first name of "Tommy" and a last name of "Smith"?
-How many 5 year olds are there?
-How many 6 year olds are there?
-How many 7-9 year olds are there?
-How many students are teenagers?
-How many green eyed students are there?
-Are there any students with the same first name?
-Are their any students with the same last name?
-How many of the students are male?  Female?
-What are the first names of the red-headed students?
-Provide a sorted list of students with a birthday in the next 30 days (sort by birthday).
-How many students are obese? (BMI >= 30)
-For each student who has a BMI > 25, print out their BMI, first and last names
-List of students sorted by birthdate
-For each student, print "Tommy Smith is 6 years old" (substitute first, last and age, sort by age)
-For each eye color, print the eye color then a list of students with that eye color
+* How would you find the student(s) with a first name of "Tommy" and a last name of "Smith"?
+* How many 5 year olds are there?
+* How many 6 year olds are there?
+* How many 7-9 year olds are there?
+* How many students are teenagers?
+* How many green eyed students are there?
+* Are there any students with the same first name?
+* Are their any students with the same last name?
+* How many of the students are male?  Female?
+* What are the first names of the red-headed students?
+* Provide a sorted list of students with a birthday in the next 30 days (sort by birthday).
+* How many students are obese? (BMI >= 30)
+* For each student who has a BMI > 25, print out their BMI, first and last names
+* List of students sorted by birthdate
+* For each student, print "Tommy Smith is 6 years old" (substitute first, last and age, sort by age)
+* For each eye color, print the eye color then a list of students with that eye color
     Blue
         Tommy Smith
     Green
