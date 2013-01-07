@@ -1,0 +1,10 @@
+
+These exercises are coding exercises that I have my mentoring students
+run through when I see them struggling with a particular concept, or
+if I think they need more practice on a given topic.
+
+I've found it's helpful to have them approach learning a given concept
+from several different angles.
+
+Some of these exercises are Ruby, some are Ruby on Rails. If you are
+doing a given exercise, don't use Rails unless you really need to.
