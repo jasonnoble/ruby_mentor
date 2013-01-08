@@ -1,0 +1,177 @@
+
+This exercise will give you more experience with the methods available
+that are available on the Array class in Ruby.
+
+Array Initialization
+  Arrays can be initialized in a number of different ways.
+
+    car_colors = ["Red", "Blue", "Green"] # => ["Red", "Blue", "Green"]
+    car_colors = %w(Red Blue Green) # => ["Red", "Blue", "Green"]
+
+    squares = Array.new(5) { |index| index * index } # => [0, 1, 4, 9, 16]
+
+    car_colors = ["Red", "Blue", "Green"]
+    my_favorite_car_colors = Array.new(car_colors)  # => ["Red", "Blue", "Green"]
+
+Adding items to an array
+  There are several ways to add an element to an existing array
+
+    Push adds items to the end of the array
+      car_colors = [] # => []
+      car_colors.push("Red") # => ["Red"]
+      car_colors.push("Blue") # => ["Red", "Blue"]
+
+    Unshift adds items to the beginning of the array
+      car_colors = [] # => []
+      car_colors.unshift("Red") # => ["Red"]
+      car_colors.unshift("Blue") # => ["Blue", "Red"]
+
+    << is similar to push, as it ends items to the end of the array
+      car_colors = [] # => []
+      car_colors << "Red" # => ["Red"]
+      car_colors << "Blue" # => ["Red", "Blue"]
+
+Removing items from an array
+  There are several ways to remove an element from an existing array
+
+    The pop method removes the last element from the array and returns
+    that element.
+
+      car_colors = %w(Red Blue Green) # => ["Red", "Blue", "Green"]
+      car_colors.pop # => "Green"
+      car_colors # => ["Red", "Blue"]
+
+    The shift method removes the first element from the array and
+    returns that element
+
+      car_colors = %w(Red Blue Green) # => ["Red", "Blue", "Green"]
+      car_colors.shift # => "Red"
+      car_colors # => ["Blue", "Green"]
+
+    TODO: car_colors.delete("Blue")
+    TODO: car_colors.delete_at(index)
+
+Accessing elements of an array
+  You can access specific elements of an array
+
+    car_colors = %w(Red Blue Green) # => ["Red", "Blue", "Green"]
+
+    car_colors[0] # => "Red"
+      Returns the element at index 0 (Arrays start with index 0)
+
+    car_colors[-1] # => "Green"
+      Negative numbers start counting from the end of the array
+
+    car_colors[1, 2] # => ["Blue", "Green"]
+      Returns the two elements starting at index 1
+      The first argument is the first element to return
+      The second argument is the number of elements to return
+
+    car_colors[1..3] # => ["Blue", "Green"]
+      Returns the elements with an index between 1 and 3
+
+    TODO: car_colors.at(index)
+    TODO: fetch(index)
+    TODO: fetch(index, default)
+
+
+Replacing elements of an array
+  You can replace elements of an array by assigning them new values
+
+    car_colors = %w(Red Blue Green) # => ["Red", "Blue", "Green"]
+    car_colors[1] = "Light Blue" # => "Light Blue"
+    car_colors # => ["Red", "Light Blue", "Green"]
+
+    TODO: array[2,3] replaces three elements starting at index 2
+    TODO: array[2,0]
+    TODO: array[1..2]
+    TODO: array[-1] (using negative indexes is allowed)
+
+TODO: Array.clear
+
+TODO:  Collect / map
+
+TODO: Collect! / map!
+
+TODO: Compact
+
+TODO: Compact!
+
+TODO: Concat
+  Add an array to an existing array
+
+TODO:
+  count
+  delete_if / keep_if
+  reject / reject!
+  each
+  empty?
+  eql? / equal? / == (may be another assignment)
+  index
+  first / first(2)
+  flatten
+  flatten!
+  include?
+  index
+  replace
+  insert
+  to_s
+  join
+  last / last(2)
+  length / size
+  reverse / reverse!
+  sample / sample(2)
+  select / select!
+  shuffle / shuffle!
+  slice!
+  sort / sort!
+  take / take(n)
+  uniq / uniq!
+  values_at
+  zip
+  
+
+
+
+
+
+
+Homework
+  Initialization
+    Create an array of Fruit names (Apple, Pear, Peach, etc) called fruit_names
+      Use the [] syntax
+      Use the %w syntax
+    Create an array called fruit_names2 by using Array.new and passing in fruit_names
+      Is fruit_names2.equal? fruit_names?  Why?  Why not?
+      If you add an item to fruit_names, does it get added to fruit_names2?
+    Use the Array.new(size) syntax to create an array of the numbers 0 through 10
+
+  Adding items to the array
+    Add an element to your fruit_names array
+      1) Add Kiwi to the end of the array
+      2) Add Banana to the beginning of the array
+      3) Add Mango to the end of the array (use a different method than #1)
+
+  Removing items from the array
+    Remove the first element in the fruit_names array and print it out
+    Remove the last element in the fruit_names array and print it out
+
+  Accessing elements of an array (use [index] syntax here)
+    Print out the last element of the array
+    Print out the first element
+    Print out two elements starting with the second one
+    Print out the last 3 elements of the array
+
+  Replacing elements
+    Replace the second element of the fruit_names array with "Orange"
+
+
+
+
+
+
+
+
+
+
+
