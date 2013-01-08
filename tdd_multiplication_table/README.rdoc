@@ -1,0 +1,44 @@
+
+This assignment uses RSpec TDD to create a class that will output a
+multiplication table for the user to learn multiplication
+
+Usage:
+
+  >> puts MultiplicationTable.new.to_s
+
+     *   1   2   3   4   5   6   7   8   9
+     1   1   2   3   4   5   6   7   8   9
+     2   2   4   6   8  10  12  14  16  18
+     3   3   6   9  12  15  18  21  24  27
+     4   4   8  12  16  20  24  28  32  36
+     5   5  10  15  20  25  30  35  40  45
+     6   6  12  18  24  30  36  42  48  54
+     7   7  14  21  28  35  42  49  56  63
+     8   8  16  24  32  40  48  56  64  72
+     9   9  18  27  36  45  54  63  72  81
+
+  >> puts MultiplicationTable.new(5).to_s
+
+     *   1   2   3   4   5
+     1   1   2   3   4   5
+     2   2   4   6   8  10
+     3   3   6   9  12  15
+     4   4   8  12  16  20
+     5   5  10  15  20  25
+
+  >>
+
+Assignment:
+
+  Create an answers directory
+  Copy the files in this directory to the answers directory
+  Setup a .rvmrc file to use ruby-1.9.3-p362 with a gemset called multiplication_table
+  Add a Gemfile that has rspec and guard-rspec
+  Add guard-spork (optional)
+  Add growl and rb-fsevent gems (optional)
+
+  After you have your Gemfile setup, you should be able to run "guard -c" and then work
+  on making the pending specs pass
+
+Expected time:
+  Approximately 1 hour
