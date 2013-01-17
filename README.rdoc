@@ -11,7 +11,7 @@ doing a given exercise, don't use Rails unless you really need to.
 
 ### Setup section ###
 
-1. Fork this repo.
+Fork this repo.
 
   In the top left corner of this page there is a "Fork" button. Click it.
   You will be asked where you would like to fork the directory to.
@@ -19,21 +19,21 @@ doing a given exercise, don't use Rails unless you really need to.
 
   This makes a copy of the repository so that you can make changes to it.
 
-2. Clone the repo locally.
+Clone the repo locally.
 
   In the terminal run:
   git clone https://github.com/USERNAME/NAME_OF_REPO.git
 
   This clones your fork of the repo into the current directory in terminal.
 
-3. Add Upstream repo.
+Add Upstream repo.
 
   Now you need to add a remote, "upstream" in your local repo that points at
   the original so you can pull from it. To do this run:
 
   git remote add upstream git@github.com:USERNAME/REPO.git
 
-4. Checkout an "answers" branch.
+Checkout an "answers" branch.
 
   git checkout -b answers
 
@@ -41,7 +41,7 @@ doing a given exercise, don't use Rails unless you really need to.
   you will make all your other branches from. This way you are not making
   changes directly to "master".
 
-5. Create an "answers" subdirectory
+Create an "answers" subdirectory
 
   mkdir answers
   touch answers/.gitkeep
@@ -50,7 +50,7 @@ doing a given exercise, don't use Rails unless you really need to.
   that directory. This is necessary because git does not track empty
   directories.
 
-6. Add this to git and commit
+Add this to git and commit
 
   git add answers
 
@@ -61,7 +61,7 @@ doing a given exercise, don't use Rails unless you really need to.
   Commits the files that have been changed. The -m option allows you to
   add a message that describes what happened on the commit.
 
-7. Push the commit to "origin"
+Push the commit to "origin"
 
   git push -u origin answers
 
@@ -70,30 +70,31 @@ doing a given exercise, don't use Rails unless you really need to.
   "origin" to "answers" so that next time you need to pull you will only
   need to run "git pull".
 
+
 ### Working on an assignment ###
 
-1. Checkout your "answers" branch
+Checkout your "answers" branch
 
   git checkout answers
 
   Be sure you are on your "answers" branch so you can begin to make changes.
 
-2. Create a topic branch based off answers
+Create a topic branch based off answers
 
   git checkout -b name_of_new_branch
 
-3. Create a subdirectory for the project
+Create a subdirectory for the project
 
   mkdir answers/new_directory (substitute the assignment name for "new_directory")
 
   Now there is a directory just for this assignment.
 
-4. Do homework ***committing as you go***
+Do homework ***committing as you go***
 
   It is important to commit work often. Each time you make a commit be sure
   to provide a descriptive message about what happend on that commit.
 
-5. When finished open a pull request on your repo to merge the topic branch into
+When finished open a pull request on your repo to merge the topic branch into
    the answers branch
 
   git push
