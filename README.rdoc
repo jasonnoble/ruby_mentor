@@ -44,8 +44,11 @@ doing a given exercise, don't use Rails unless you really need to.
 5. Create an "answers" subdirectory
 
   mkdir answers
+  touch answers/.gitkeep
 
-  This creates a subdirectory named "answers".
+  This creates a subdirectory named "answers", and then creates a file inside
+  that directory. This is necessary because git does not track empty
+  directories.
 
 6. Add this to git and commit
 
@@ -63,9 +66,9 @@ doing a given exercise, don't use Rails unless you really need to.
   git push -u origin answers
 
   This pushes the commit from the "answers" branch to "origin" which is
-  the original repository. The -u causes git to remember to push from
-  "answers" to "origin" so that next time you need to push you will only
-  need to run "git push".
+  the original repository. The -u causes git to remember to pull from
+  "origin" to "answers" so that next time you need to pull you will only
+  need to run "git pull".
 
 ### Working on an assignment ###
 
